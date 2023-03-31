@@ -1,0 +1,41 @@
+#pragma once
+
+// DaysGone (00) SDK
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+namespace SDK
+{
+//---------------------------------------------------------------------------
+//Classes
+//---------------------------------------------------------------------------
+
+// BlueprintGeneratedClass Actor_EnvCover.Actor_EnvCover_C
+// 0x000A (0x0352 - 0x0348)
+class AActor_EnvCover_C : public AActor
+{
+public:
+	class USceneComponent*                             DefaultSceneRoot;                                         // 0x0348(0x0008) (BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               noSMPNeeded;                                              // 0x0350(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+	bool                                               hasError;                                                 // 0x0351(0x0001) (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData)
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass Actor_EnvCover.Actor_EnvCover_C");
+		return ptr;
+	}
+
+
+	void RequestSMPReplacement();
+	void AddChildCover(class UBendCoverChildComponent* coverVolume, class UClass* coverClass);
+	void UserConstructionScript();
+};
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif

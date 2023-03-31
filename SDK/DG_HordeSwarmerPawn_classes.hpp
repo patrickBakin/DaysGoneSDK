@@ -1,0 +1,39 @@
+#pragma once
+
+// DaysGone (00) SDK
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+namespace SDK
+{
+//---------------------------------------------------------------------------
+//Classes
+//---------------------------------------------------------------------------
+
+// BlueprintGeneratedClass HordeSwarmerPawn.HordeSwarmerPawn_C
+// 0x0008 (0x2B58 - 0x2B50)
+class AHordeSwarmerPawn_C : public ASwarmerPawn_C
+{
+public:
+	struct FPointerToUberGraphFrame                    UberGraphFrame;                                           // 0x2B50(0x0008) (ZeroConstructor, Transient, DuplicateTransient)
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass HordeSwarmerPawn.HordeSwarmerPawn_C");
+		return ptr;
+	}
+
+
+	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_HordeSwarmerPawn(int EntryPoint);
+};
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif

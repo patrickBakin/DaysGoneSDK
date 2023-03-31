@@ -1,0 +1,34 @@
+#pragma once
+
+// DaysGone (00) SDK
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x8)
+#endif
+
+namespace SDK
+{
+//---------------------------------------------------------------------------
+//Classes
+//---------------------------------------------------------------------------
+
+// BlueprintGeneratedClass AnimNotify_MeleeComboStartTime.AnimNotify_MeleeComboStartTime_C
+// 0x0000 (0x0030 - 0x0030)
+class UAnimNotify_MeleeComboStartTime_C : public UAnimNotify
+{
+public:
+
+	static UClass* StaticClass()
+	{
+		static auto ptr = UObject::FindClass("BlueprintGeneratedClass AnimNotify_MeleeComboStartTime.AnimNotify_MeleeComboStartTime_C");
+		return ptr;
+	}
+
+};
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
